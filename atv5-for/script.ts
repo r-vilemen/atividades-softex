@@ -154,3 +154,64 @@ while (number > 0) {
 console.log(`A soma dos dígitos do número é: ${sum2}`);
 
 // Questão 22
+let number3 = Number(prompt("Digite um número inteiro:"));
+
+console.log(`Os divisores de ${number3} são:`);
+for (let i = 1; i <= number3; i++) {
+  if (number3 % i === 0) {
+    console.log(i);
+  }
+}
+
+// Questão 23
+let heights: number[] = [];
+
+for (let i = 0; i < 5; i++) {
+  let height = Number(prompt(`Digite a altura da pessoa ${i + 1}:`));
+  heights.push(height);
+}
+
+let sum3 = 0;
+for (let height of heights) {
+  sum3 += height;
+}
+
+let average = sum3 / heights.length;
+console.log(`A média de altura das pessoas é: ${average}`);
+
+// Questão 24
+let number4 = 0;
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
+
+// Questão 25
+let sumOfEvenDigits = 0;
+
+for (let digit = number; digit > 0; digit = Math.floor(digit / 10)) {
+  let currentDigit = digit % 10;
+  if (currentDigit % 2 === 0) {
+    sumOfEvenDigits += currentDigit;
+  }
+}
+
+console.log(`A soma dos dígitos pares do número é: ${sumOfEvenDigits}`);
+
+// Questão 26
+let reversedNumber = 0;
+let numberCopy = number;
+
+for (; numberCopy > 0; numberCopy = Math.floor(numberCopy / 10)) {
+  let digit = numberCopy % 10;
+  reversedNumber = reversedNumber * 10 + digit;
+}
+
+console.log(`O número invertido é: ${reversedNumber}`);
