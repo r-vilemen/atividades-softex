@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade de HTML</title>
+  </head>
+  <body>
+    <h1><center>Aula 01 - Introdução ao HTML</center></h1>
+    <h3>Conhecendo o HTMl e sua estrutura básica</h3>
+    <ul>
+      <li>
+        O que é o HTML e qual é o seu papel na construção de páginas web?
+        Descreva brevemente a estrutura básica de um documento HTML.
+      </li>
+      <li style="list-style: none">
+        <b>
+          HTML (HyperText Markup Language) é a linguagem de marcação padrão
+          usada para criar e estruturar páginas web. <br />
+          Um documento HTML típico possui uma estrutura básica que inclui os
+          seguintes elementos: <br />
+          &lt;!doctype html&gt; Declaração do tipo de documento que informa ao
+          navegador que o documento é um HTML. <br />
+          &lt;html&gt;: Elemento raiz que envolve todo o conteúdo da página.
+          <br />
+
+          &lt;head&gt;: Contém metadados sobre o documento, como o título da
+          página, links para arquivos CSS, scripts, e outras informações meta.
+          <br />
+
+          &lt;title&gt;: Define o título da página que aparece na aba do
+          navegador. <br />
+          &lt;body&gt;: Contém o conteúdo visível da página, como textos,
+          imagens, links, etc.</b
+        >
+      </li>
+      <br />
+      <li>
+        Como o HTML se relaciona com outras tecnologias da web, como o CSS e o
+        JavaScript? Como essas três tecnologias trabalham em conjunto para criar
+        páginas web interativas e estilizadas?
+      </li>
+      <li style="list-style: none">
+        <b>
+          HTML, CSS e JavaScript são as três tecnologias fundamentais para a
+          construção de páginas web. Cada uma delas desempenha um papel
+          específico e, quando usadas em conjunto, permitem a criação de páginas
+          web interativas e estilizadas. <br />
+          HTML: Cria a estrutura básica da página. <br />
+          CSS: Aplica estilos ao conteúdo HTML. <br />
+          JavaScript: Adiciona interatividade à página.</b
+        >
+      </li>
+    </ul>
+    <h3>Identificando tags HTML básicas</h3>
+    <ul>
+      <li>
+        Cite três tags HTML básicas e explique o propósito de cada uma delas. Dê
+        exemplos de situações em que você as usaria ao construir uma página web.
+      </li>
+      <li style="list-style: none">
+        <b>
+          &lt;h1&gt; a &lt;h6&gt; (Cabeçalhos) <br />
+          Propósito: Definir títulos e subtítulos na página, com &lt;h1&gt;
+          sendo o mais importante e &lt;h6&gt; o menos importante. Exemplo de
+          Uso: <br />
+          Usar &lt;h1&gt; para o título principal da página e &lt;h2&gt; a
+          &lt;h6&gt; para subtítulos e seções subsequentes.</b
+        >
+      </li>
+      <br />
+      <li>
+        Além das tags mencionadas, qual é a importância das tags de listagem,
+        como &lt;ul&gt; e &lt;ol&gt;, no contexto da estruturação de conteúdo em
+        uma página? Dê exemplos de quando você escolheria uma sobre a outra.
+      </li>
+      <li style="list-style: none">
+        <b>
+          As tags de listagem, como &lt;ul&gt; (lista não ordenada) e &lt;ol&gt;
+          (lista ordenada), são importantes para estruturar e organizar o
+          conteúdo em uma página web de maneira clara e legível. Elas ajudam a
+          agrupar itens relacionados, facilitando a leitura e a navegação para
+          os usuários. <br />
+          &lt;ul&gt; (Lista Não Ordenada) Propósito: Criar uma lista de itens
+          onde a ordem não é importante. Exemplo de Uso: Usar &lt;ul&gt; para
+          listas de características, itens de menu, ou qualquer conjunto de
+          itens onde a sequência não importa. <br />
+          &lt;ol&gt; (Lista Ordenada) Propósito: Criar uma lista de itens onde a
+          ordem é importante. Exemplo de Uso: Usar &lt;ol&gt; para listas de
+          instruções, passos de um processo, ou qualquer conjunto de itens onde
+          a sequência é relevante. <br />
+          Quando Escolher Uma Sobre a Outra? <br />
+          &lt;ul&gt; Quando a ordem dos itens não faz diferença. Por exemplo,
+          uma lista de recursos de um software, itens de um menu de navegação,
+          ou uma lista de contatos. <br />
+          &lt;ol&gt;: Quando a ordem dos itens é crucial. Por exemplo, uma lista
+          de etapas para completar uma tarefa, uma receita de culinária, ou uma
+          lista de prioridades.
+        </b>
+      </li>
+    </ul>
+
+    <h3>Vinculando páginas, arquivos e âncoras</h3>
+    <ul>
+      <li>
+        Como a tag &lt;a&gt; é utilizada para criar links em HTML? Explique como
+        você pode vincular para outras páginas, para arquivos locais e criar
+        âncoras dentro de uma página.
+      </li>
+      <li style="list-style: none">
+        <b>
+          A tag &lt;a&gt; é utilizada para criar links em HTML. Para vincular a
+          outras páginas, você deve usar o atributo href com o URL da página de
+          destino, como &lt;a href="pagina.html"&gt;Link&lt;/a&gt;. Para
+          arquivos locais, você pode fornecer o caminho relativo, como &lt;a
+          href="documentos/arquivo.pdf"&gt;Arquivo PDF&lt;/a&gt;. Para criar
+          âncoras dentro da mesma página, você pode definir um id no elemento
+          alvo e, em seguida, criar um link para ele usando o atributo href com
+          uma hashtag (#), como &lt;a href="#secao"&gt;Vá para a
+          seção&lt;/a&gt;.
+        </b>
+      </li>
+      <br />
+      <li>
+        Além do atributo href, quais outros atributos importantes a tag
+        &lt;a&gt; pode ter? Como o atributo target pode ser usado para controlar
+        como o link é aberto pelo navegador?
+      </li>
+      <li style="list-style: none">
+        <b>
+          Além do atributo href, a tag &lt;a&gt; pode ter outros atributos
+          importantes, como o target e o title. O atributo target é utilizado
+          para controlar onde o link será aberto. Por exemplo, &lt;a
+          href="https://example.com" target="_blank"&gt; abrirá o link em uma
+          nova aba ou janela. O atributo title pode fornecer informações
+          adicionais ao usuário, exibidas quando o cursor passa sobre o link.
+        </b>
+      </li>
+    </ul>
+
+    <h3>Incorporando imagens e mídias</h3>
+    <ul>
+      <li>
+        Descreva a diferença entre os atributos src e alt em relação à tag
+        &lt;img&gt;. Por que é importante fornecer um atributo alt adequado para
+        imagens?
+      </li>
+      <li style="list-style: none">
+        <b>
+          O atributo src especifica a origem da imagem, ou seja, o caminho do
+          arquivo de imagem, como &lt;img src="imagens/foto.jpg"&gt;. O atributo
+          alt fornece um texto alternativo que é exibido se a imagem não puder
+          ser carregada e é essencial para a acessibilidade, pois descreve a
+          imagem para leitores de tela usados por pessoas com deficiência
+          visual.
+        </b>
+      </li>
+      <br />
+      <li>
+        Além de imagens, quais outros tipos de mídia podem ser incorporados em
+        uma página HTML? Como você pode garantir que a mídia incorporada seja
+        responsiva e se ajuste bem em diferentes dispositivos?
+      </li>
+      <li style="list-style: none">
+        <b>
+          Além de imagens, outros tipos de mídia que podem ser incorporados em
+          uma página HTML incluem vídeos (usando a tag &lt;video&gt;), áudio
+          (usando a tag &lt;audio&gt;), e elementos embutidos como iframes. Para
+          garantir que a mídia seja responsiva, você pode usar CSS para definir
+          largura e altura percentuais, ou utilizar unidades relativas como "em"
+          ou "vw", além de técnicas como o uso de media queries para ajustar o
+          layout em diferentes tamanhos de tela.
+        </b>
+      </li>
+    </ul>
+
+    <h3>Criando tabelas básicas</h3>
+    <ul>
+      <li>
+        Quais são as principais tags usadas para criar tabelas em HTML? Explique
+        a diferença entre as tags &lt;th&gt; e &lt;td&gt;, e quando você as
+        usaria.
+      </li>
+      <li style="list-style: none">
+        <b>
+          As principais tags usadas para criar tabelas em HTML são
+          &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, e &lt;td&gt;. A tag
+          &lt;table&gt; define a tabela, &lt;tr&gt; define uma linha na tabela,
+          &lt;th&gt; define uma célula de cabeçalho (que geralmente aparece em
+          negrito e centralizada), e &lt;td&gt; define uma célula de dados.
+          Usaria &lt;th&gt; para cabeçalhos de colunas ou linhas, e &lt;td&gt;
+          para todas as outras células de dados.
+        </b>
+      </li>
+      <br />
+      <li>
+        Embora tabelas sejam usadas para exibir dados tabulares, às vezes é
+        recomendado evitá-las em favor de outras formas de apresentação de
+        dados. Por quê? E quais são os cenários em que as tabelas são
+        apropriadas?
+      </li>
+      <li style="list-style: none">
+        <b>
+          Tabelas são ótimas para exibir dados tabulares organizados em linhas e
+          colunas. No entanto, é recomendado evitá-las em casos onde a estrutura
+          dos dados não seja essencialmente tabular ou quando a tabela poderia
+          ser substituída por listas, gráficos, ou layouts de grid que
+          proporcionem uma experiência visual mais atraente e acessível.
+          <br />
+          Isso ocorre porque tabelas podem ser difíceis de adaptar para layouts
+          responsivos e podem apresentar problemas de acessibilidade,
+          especialmente para usuários de leitores de tela.
+          <br />
+          As tabelas são apropriadas quando os dados precisam ser organizados em
+          uma grade, onde a relação entre os dados nas linhas e colunas é
+          importante. Exemplos incluem relatórios financeiros, horários de aula,
+          ou qualquer conjunto de dados onde a comparação direta entre
+          diferentes categorias é necessária.
+        </b>
+      </li>
+    </ul>
+
+    <h3>Criando formulários</h3>
+    <ul>
+      <li>
+        Como a tag &lt;form&gt; é usada em HTML para criar formulários? Explique
+        a função dos atributos action e method no contexto de um formulário.
+      </li>
+      <li style="list-style: none">
+        <b>
+          A tag &lt;form&gt; é usada em HTML para criar formulários, que
+          permitem a entrada e envio de dados do usuário. O atributo action
+          especifica o URL para onde os dados do formulário devem ser enviados
+          ao serem submetidos, e o atributo method define o método HTTP a ser
+          usado, geralmente "GET" ou "POST". "GET" anexa os dados à URL,
+          enquanto "POST" envia os dados de forma mais segura e não visível na
+          URL.
+        </b>
+      </li>
+      <br />
+      <li>
+        Além dos campos de entrada, quais outros elementos podem ser incluídos
+        em um formulário para melhorar a usabilidade e a experiência do usuário?
+      </li>
+      <li style="list-style: none">
+        <b>
+          Além dos campos de entrada &lt;input&gt;, vários outros elementos
+          podem ser incluídos em um formulário para melhorar a usabilidade e a
+          experiência do usuário: <br /><br />
+          1. <strong>&lt;label&gt;:</strong> Associado a um campo de entrada, o
+          elemento <code>&lt;label&gt;</code> melhora a acessibilidade e ajuda o
+          usuário a entender o propósito do campo. <br /><br />
+          2. <strong>&lt;select&gt; e &lt;option&gt;:</strong> Permitem a
+          criação de menus suspensos, permitindo que os usuários escolham uma
+          opção a partir de uma lista predefinida. <br /><br />
+          3. <strong>&lt;textarea&gt;:</strong> Usado para permitir que os
+          usuários insiram grandes blocos de texto, como em comentários ou
+          descrições. <br /><br />
+          4. <strong>&lt;button&gt;:</strong> Usado para acionar ações como
+          enviar o formulário, redefinir campos, ou iniciar outras interações.
+          <br /><br />
+          5. <strong>&lt;fieldset&gt; e &lt;legend&gt;:</strong> Agrupam campos
+          relacionados e fornecem uma legenda para o grupo, ajudando a organizar
+          o formulário de maneira clara.
+        </b>
+      </li>
+    </ul>
+
+    <h3>Técnicas avançadas de estruturação com elementos HTML5 semânticos</h3>
+    <ul>
+      <li>
+        O que são elementos HTML5 semânticos e por que são importantes na
+        estruturação de uma página? Cite três exemplos de elementos semânticos e
+        explique quando você os usaria.
+      </li>
+      <li style="list-style: none">
+        <b>
+          Elementos HTML5 semânticos são aqueles que claramente descrevem o
+          significado de seu conteúdo tanto para navegadores quanto para
+          desenvolvedores. Eles são importantes porque melhoram a
+          acessibilidade, a indexação por motores de busca, e a clareza do
+          código, tornando a estrutura da página mais intuitiva e fácil de
+          entender.
+          <br /><br />
+          Três exemplos de elementos semânticos:
+          <br /><br />
+          1. <strong>&lt;header&gt;:</strong> Usado para definir a seção de
+          cabeçalho de uma página ou de uma seção de conteúdo. É ideal para
+          incluir logotipos, menus de navegação, e outras informações
+          introdutórias. <br /><br />
+          2. <strong>&lt;article&gt;:</strong> Utilizado para conteúdo
+          independente, como posts de blogs, artigos de notícias, ou qualquer
+          conteúdo que possa ser distribuído de forma independente ou
+          reutilizável. <br /><br />
+          3. <strong>&lt;footer&gt;:</strong> Define o rodapé de uma página ou
+          seção. Normalmente contém informações sobre o autor, links de
+          navegação, e direitos autorais.
+        </b>
+      </li>
+      <br />
+
+      <li>
+        Além da semântica, como os elementos HTML5 podem afetar a acessibilidade
+        das páginas web? Por que é fundamental considerar a acessibilidade ao
+        escolher elementos de estruturação?
+      </li>
+      <li style="list-style: none">
+        <b>
+          Além da semântica, os elementos HTML5 desempenham um papel crucial na
+          acessibilidade das páginas web, pois ajudam tecnologias assistivas,
+          como leitores de tela, a interpretar e navegar corretamente pelo
+          conteúdo. Elementos semânticos informam aos dispositivos de
+          acessibilidade a função de diferentes partes da página, permitindo uma
+          experiência de navegação mais fluida para pessoas com deficiências.
+          <br /><br />
+          Considerar a acessibilidade ao escolher elementos de estruturação é
+          fundamental porque garante que todos os usuários, independentemente de
+          suas habilidades físicas ou cognitivas, possam acessar e utilizar o
+          conteúdo da página. A inclusão de elementos semânticos adequados
+          facilita a navegação, melhora a compreensão do conteúdo, e cumpre
+          requisitos de conformidade com normas de acessibilidade, como a WCAG
+          (Web Content Accessibility Guidelines).
+        </b>
+      </li>
+    </ul>
+  </body>
+</html>
